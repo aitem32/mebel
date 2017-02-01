@@ -1,4 +1,5 @@
-# LS builder
+#Mebel
+Редизайн и верстка лендинга для мебельщиков
 
 Getting started:
 
