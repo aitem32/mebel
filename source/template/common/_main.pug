@@ -1,0 +1,516 @@
+.wrapper
+		header.header
+			.container
+				.company_logo
+					.company_logo_text Мебельная компания  г.Казань
+					a.company_logo__link(href='#') Логотип компании Шеп мебель
+						img.company_logo__img(src='./assets/img/logo_light.svg' alt='логотип Шеп мебель')
+
+				.header_content
+					.company_contacts
+						
+						ul.company_number_list
+							li.company_number 8(843) 253-69-25
+							li.company_number 8-960-044-14-16
+							
+						a.call_me_btn(href='#') Заказать звонок
+
+					nav.main_menu
+						ul.menu__list
+							li.menu__item
+								a.menu__link(href="#about") О нас
+							li.menu__item
+								a.menu__link(href="#prtf") Наши работы
+							li.menu__item
+								a.menu__link(href="#price") Цены
+							li.menu__item
+								a.menu__link(href="#serv") Услуги
+							li.menu__item
+								a.menu__link(href="#contacts") Контакты
+
+
+		.main_content
+				.container
+					section.slider#podarki
+							ul.slider_img__list.fotorama(data-width='100%' data-ratio='1.81' data-transition='crossfade' data-loop='true' data-autoplay='4000' data-arrows='false')
+
+								li.slider_img__item
+									img.slider_img(src='./assets/img/1slide.jpg' alt='кухня')
+									.overlay
+										h3.slide_utp Закажите кухню и получите каменную мойку
+											span в подарок
+										
+								li.slider_img__item
+									img.slider_img(src='./assets/img/2slide.jpg' alt='кухня')
+									.overlay
+										h3.slide_utp Закажите шкаф-купе и получите выкатные ящики
+											span в подарок
+										
+								li.slider_img__item
+									img.slider_img(src='./assets/img/3slide.jpg' alt='кухня')
+									.overlay
+										h3.slide_utp Замер и доставка
+											span бесплатно
+										
+							.slider_text
+								h1.main_title Мебель на заказ по индивидуальным размерам
+
+								a.slider_soc_btn(href='https://vk.com/mebelizkzn') Еще больше о нас в соцсетях
+									br
+									i.fa.fa-vk
+
+								form.feedback_form(name='top_form' method='post' action='#')
+									h3.form_title Заказать звонок
+									p.form_text  *Ваши данные останутся строго конфиденциальными
+									input.name(name='name' type='text' placeholder='Ваше имя' size='30' required)
+									input.phone(name='phone' type='text' placeholder='Ваш телефон' size='20' required)
+									button.send_btn(type='submit' name='send_btn') Заказать
+
+					section#about.about_us
+						h2.section_title Наши преимущества
+
+						ul.about_us__list
+							li.about_us__item
+								img.about_us__img(src='./assets/img/icons/cupboard.png' alt='иконка шкафа')
+								.about_us__def Выполняем проекты любой сложности
+
+							li.about_us__item
+								img.about_us__img(src='./assets/img/icons/tags.png' alt='иконка тег')
+								.about_us__def Широкий ассортимент фасадов и внутренней отделки
+
+							li.about_us__item
+								img.about_us__img(src='./assets/img/icons/wallet.png' alt='иконка кошелек')
+								.about_us__def Доступные цены для любого кошелька
+
+							li.about_us__item
+								img.about_us__img(src='./assets/img/icons/ruler.png' alt='иконка линейка')
+								.about_us__def Замер и 3D-проект БЕСПЛАТНО
+
+							li.about_us__item
+								img.about_us__img(src='./assets/img/icons/truck.png' alt='иконка грузовик')
+								.about_us__def Доставка БЕСПЛАТНО
+
+							li.about_us__item
+								img.about_us__img(src='./assets/img/icons/timer.png' alt='иконка таймер')
+								.about_us__def Справляемся в короткие сроки
+
+							li.about_us__item
+								img.about_us__img(src='./assets/img/icons/diamond.png' alt='иконка брилиант')
+								.about_us__def Используем только качественные материалы и фурнитуру
+
+							li.about_us__item
+								img.about_us__img(src='./assets/img/icons/briefcase.png' alt='иконка портфель')
+								.about_us__def У нас работают профессионалы
+
+							li.about_us__item
+								img.about_us__img(src='./assets/img/icons/hand.png' alt='иконка ок')
+								.about_us__def Нас рекомендуют своим друзьям и знакомым
+
+					section#prtf.portfolio
+						h2.section_title Наши работы
+						ul.portfolio__list
+
+							li.portfolio__item
+								a#ktcn.portfolio__link(href='#') Кухни
+									img.portfolio__img(src='./assets/img/1box.jpg' alt='кухни')
+									.link_overlay
+										i.fa.fa-search-plus
+								.portfolio__desc Кухни	
+
+							li.portfolio__item
+								a#cbd.portfolio__link(href='#') Шкафы-купе
+									img.portfolio__img(src='./assets/img/2box.jpg' alt='шкафы-купе')
+									.link_overlay
+										i.fa.fa-search-plus
+								.portfolio__desc Шкафы-купе
+
+							li.portfolio__item
+								a#kds.portfolio__link(href='#') Детские
+									img.portfolio__img(src='./assets/img/3box.jpg' alt='детские')
+									.link_overlay
+										i.fa.fa-search-plus
+								.portfolio__desc Детские
+
+							li.portfolio__item
+								a#hl.portfolio__link(href='#') Гостинные
+									img.portfolio__img(src='./assets/img/4box.jpg' alt='гостинные')
+									.link_overlay
+										i.fa.fa-search-plus
+								.portfolio__desc Гостинные							
+
+					section#price.price
+						h2.section_title Цены
+						ul.price__list
+							li.price__item
+								.price__title Кухни
+								.price__amount от
+									span 15 000 руб
+							li.price__item
+								.price__title Шкафы-купе
+								.price__amount от
+									span 10 000 руб
+							li.price__item
+								.price__title Гостинные
+								.price__amount от
+									span 16 000 руб
+							li.price__item
+								.price__title Спальни
+								.price__amount от
+									span 9 000 руб
+							li.price__item
+								.price__title Детские
+								.price__amount от
+									span 12 000 руб
+							li.price__item
+								.price__title Прихожие
+								.price__amount от
+									span 8 000 руб
+
+					section.works_scheme
+						h2.section_title Как мы работаем
+						ul.scheme__list
+							li.scheme__item Вы оставляете заявку на сайте или по телефону
+							li.scheme__item К Вам выезжает специалист, делает все необходимые замеры, вместе с Вами выбирает проект и материалы, точно считает стоимость проекта
+							li.scheme__item Мы согласовываем цены и заключаем договор
+							li.scheme__item Изготавливаем, доставляем и устанавливаем Вашу мебель
+							li.scheme__item Вы получаете готовую мебель отличного качества, не выходя из дома
+
+					section#serv.services
+						h2.section_title Дополнительные услуги
+						p.section_text Наша основная специализация - изготовление корпусной  мебели под заказ. Однако у нас есть огромный опыт оказания дополнительных услуг.
+						ul.services__list
+							li.services__item
+								img.services__img(src='./assets/img/1serv.jpg' alt='столешница')
+								.services_text__block
+									.services__title Замена столешниц
+									.services__text Полный цикл работ по замене столешниц на старых кухнях: заказ, доставка, демонтаж и монтаж (столешниц и пристенного плинтуса)
+							li.services__item
+								img.services__img(src='./assets/img/2serv.jpg' alt='столешница')
+								.services_text__block
+									.services__title Замена фасадов
+									.services__text Замена фасадов кухни, гостиной или шкафа в короткий срок. Замена старых фасадов - самый удобный и быстрый способ создать новый интерьер!  
+							li.services__item
+								img.services__img(src='./assets/img/3serv.jpg' alt='столешница')
+								.services_text__block
+									.services__title Замена мебельной фурнитуры
+									.services__text Замена любых компонентов мебели с соответствующей оперативностью и надежностью  
+							li.services__item
+								img.services__img(src='./assets/img/4serv.jpg' alt='столешница')
+								.services_text__block
+									.services__title Замена кухонного фартука
+									.services__text Поможем легко заменить старый кухонный фартук на новый. Кстати,  у нас огромный выбор фартуков  
+							li.services__item
+								img.services__img(src='./assets/img/5serv.jpg' alt='столешница')
+								.services_text__block
+									.services__title Замена дверей шкафов-купе
+									.services__text Качественно и аккуратно поменяем дверь, заменим ролики и направляющие вашего шкафа, поменяем зеркало или стекло на двери шкафа.
+							li.services__item
+								img.services__img(src='./assets/img/6serv.jpg' alt='столешница')
+								.services_text__block
+									.services__title Изменение размера шкафов
+									.services__text Качественное изменение размера мебели по Вашему  желанию
+
+					footer.footer#contacts
+						h2.contacts__title Контакты
+						.contacts__block
+							ul.contacts__list
+								li.contacts__item
+									i.fa.fa-phone
+									.contact 8(843) 253-69-25
+								li.contacts__item
+									i.fa.fa-phone
+									.contact 8 960 044 14 16
+								li.contacts__item
+									a.contacts_soc(href='https://vk.com/mebelizkzn')
+										i.fa.fa-vk
+									.contact Мы в соцсетях
+								li.contacts__item
+									i.fa.fa-envelope
+									.contact mebelvkzn@mail.ru
+								li.contacts__item
+									i.fa.fa-map-marker
+									.contats__number г.Казань, ул. Жуковка, 2
+
+							form.feedback_form(name='bottom_form' method='post' action='#')
+								h3.form_title Заказать звонок
+								p.form_text  *Ваши данные останутся строго конфиденциальными
+								input.name(name='name' type='text' placeholder='Ваше имя' size='30' required)
+								input.phone(name='phone' type='text' placeholder='Ваш телефон' size='20' required)
+								button.send_btn(type='submit' name='send_btn') Заказать
+
+#kitchen.modal.close
+		a.btn_close(href='#') Закрыть
+			i.fa.fa-close
+		ul.galery.fotorama(data-maxwidth='800' data-minwidth='300' data-ratio='4/3' data-loop='true' data-autoplay='5000' data-transition='crossfade')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_0.jpg' alt='кухня1_0')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_1.jpg' alt='кухня1_1')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_2.jpg' alt='кухня1_2')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_3.jpg' alt='кухня1_3')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_4.jpg' alt='кухня1_4')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_5.jpg' alt='кухня1_5')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_6.jpg' alt='кухня1_6')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_7.jpg' alt='кухня1_7')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_8.jpg' alt='кухня1_8')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_9.jpg' alt='кухня1_9')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_10.jpg' alt='кухня1_10')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_11.jpg' alt='кухня1_11')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_12.jpg' alt='кухня1_12')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_13.jpg' alt='кухня1_13')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_14.jpg' alt='кухня1_14')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_15.jpg' alt='кухня1_15')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_16.jpg' alt='кухня1_16')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_17.jpg' alt='кухня1_17')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_18.jpg' alt='кухня1_18')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_19.jpg' alt='кухня1_19')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_20.jpg' alt='кухня1_20')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_21.jpg' alt='кухня1_21')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_22.jpg' alt='кухня1_22')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_23.jpg' alt='кухня1_23')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_24.jpg' alt='кухня1_24')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_25.jpg' alt='кухня1_25')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_26.jpg' alt='кухня1_26')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_27.jpg' alt='кухня1_27')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_28.jpg' alt='кухня1_28')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_32.jpg' alt='кухня1_32')
+			li.galery__item
+				img.galery__img(src='./assets/img/kitchen/1_30.jpg' alt='кухня1_30')
+
+#cupboard.modal.close
+		a.btn_close(href='#') Закрыть
+			i.fa.fa-close
+		ul.galery.fotorama(data-maxheight='600' data-minheight='400' data-ratio='3/4' data-loop='true' data-autoplay='5000' data-transition='crossfade')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1.jpg' alt='шкаф-купе 1')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_1.jpg' alt='шкаф-купе 1_1')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_2.jpg' alt='шкаф-купе 1_2')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_3.jpg' alt='шкаф-купе 1_3')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_4.jpg' alt='шкаф-купе 1_4')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_5.jpg' alt='шкаф-купе 1_5')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_6.jpg' alt='шкаф-купе 1_6')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_7.jpg' alt='шкаф-купе 1_7')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_8.jpg' alt='шкаф-купе 1_8')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_9.jpg' alt='шкаф-купе 1_9')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_10.jpg' alt='шкаф-купе 1_10')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_11.jpg' alt='шкаф-купе 1_11')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_12.jpg' alt='шкаф-купе 1_12')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_13.jpg' alt='шкаф-купе 1_13')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_14.jpg' alt='шкаф-купе 1_14')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_15.jpg' alt='шкаф-купе 1_15')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_16.jpg' alt='шкаф-купе 1_16')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_17.jpg' alt='шкаф-купе 1_17')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_18.jpg' alt='шкаф-купе 1_18')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_19.jpg' alt='шкаф-купе 1_19')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_20.jpg' alt='шкаф-купе 1_20')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_21.jpg' alt='шкаф-купе 1_21')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_22.jpg' alt='шкаф-купе 1_22')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_23.jpg' alt='шкаф-купе 1_23')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_24.jpg' alt='шкаф-купе 1_24')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_25.jpg' alt='шкаф-купе 1_25')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_26.jpg' alt='шкаф-купе 1_26')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_27.jpg' alt='шкаф-купе 1_27')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_28.jpg' alt='шкаф-купе 1_28')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_32.jpg' alt='шкаф-купе 1_32')
+			li.galery__item
+				img.galery__img(src='./assets/img/cupboard/1_30.jpg' alt='шкаф-купе 1_30')
+
+#hall.modal.close
+		a.btn_close(href='#') Закрыть
+			i.fa.fa-close
+		ul.galery.fotorama(data-maxwidth='800' data-minwidth='300' data-ratio='4/3' data-loop='true' data-autoplay='5000' data-transition='crossfade')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1.jpg' alt='гостинная 1')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_1.jpg' alt='гостинная 1_1')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_2.jpg' alt='гостинная 1_2')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_3.jpg' alt='гостинная 1_3')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_4.jpg' alt='гостинная 1_4')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_5.jpg' alt='гостинная 1_5')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_6.jpg' alt='гостинная 1_6')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_7.jpg' alt='гостинная 1_7')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_8.jpg' alt='гостинная 1_8')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_9.jpg' alt='гостинная 1_9')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_10.jpg' alt='гостинная 1_10')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_11.jpg' alt='гостинная 1_11')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_12.jpg' alt='гостинная 1_12')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_13.jpg' alt='гостинная 1_13')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_14.jpg' alt='гостинная 1_14')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_16.jpg' alt='гостинная 1_16')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_17.jpg' alt='гостинная 1_17')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_18.jpg' alt='гостинная 1_18')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_19.jpg' alt='гостинная 1_19')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_20.jpg' alt='гостинная 1_20')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_22.jpg' alt='гостинная 1_22')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_23.jpg' alt='гостинная 1_23')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_25.jpg' alt='гостинная 1_25')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_26.jpg' alt='гостинная 1_26')
+			li.galery__item
+				img.galery__img(src='./assets/img/hall/1_28.jpg' alt='гостинная 1_28')
+
+#kids.modal.close
+		a.btn_close(href='#') Закрыть
+			i.fa.fa-close
+		ul.galery.fotorama(data-maxheight='800' data-minheight='400' data-ratio='3/4' data-loop='true' data-autoplay='5000' data-transition='crossfade')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1.jpg' alt='детская 1')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_1.jpg' alt='детская 1_1')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_2.jpg' alt='детская 1_2')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_3.jpg' alt='детская 1_3')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_4.jpg' alt='детская 1_4')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_5.jpg' alt='детская 1_5')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_6.jpg' alt='детская 1_6')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_7.jpg' alt='детская 1_7')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_8.jpg' alt='детская 1_8')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_9.jpg' alt='детская 1_9')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_10.jpg' alt='детская 1_10')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_11.jpg' alt='детская 1_11')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_12.jpg' alt='детская 1_12')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_13.jpg' alt='детская 1_13')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_14.jpg' alt='детская 1_14')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_15.jpg' alt='детская 1_15')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_16.jpg' alt='детская 1_16')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_17.jpg' alt='детская 1_17')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_18.jpg' alt='детская 1_18')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_19.jpg' alt='детская 1_19')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_20.jpg' alt='детская 1_20')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_21.jpg' alt='детская 1_21')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_22.jpg' alt='детская 1_22')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_23.jpg' alt='детская 1_23')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_24.jpg' alt='детская 1_24')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_25.jpg' alt='детская 1_25')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_26.jpg' alt='детская 1_26')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_27.jpg' alt='детская 1_27')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_28.jpg' alt='детская 1_28')
+			li.galery__item
+				img.galery__img(src='./assets/img/kids/1_32.jpg' alt='детская 1_32')
+
+#feedback.modal.close
+	.popup_win
+		a.btn_close(href='#') Закрыть
+			i.fa.fa-close
+		form.feedback_form(name='modal_form' method='post' action='#')
+			h3.form_title Заказать звонок
+			p.form_text  *Ваши данные останутся строго конфиденциальными
+			input.name(name='name' type='text' placeholder='Ваше имя' size='30' required)
+			input.phone(name='phone' type='text' placeholder='Ваш телефон' size='20' required)
+			button.send_btn(type='submit' name='send_btn') Заказать
+
+#win.modal.close
+	.popup_win
+		a.btn_close(href='#') Закрыть
+			i.fa.fa-close
+		.popup_message Спасибо за заявку!
+
+
+script(src='/assets/js/foundation.js' defer)   
+script(src='/assets/js/app.js' defer)
+
+

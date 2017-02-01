@@ -1,0 +1,31 @@
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;  
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-vk:before {
+  content: "\f189";
+}
+
+.fa-close:before
+{
+  content: "\f00d";
+}
+
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
+
+.fa-search-plus:before {
+  content: "\f00e";
+}
